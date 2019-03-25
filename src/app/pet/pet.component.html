@@ -1,0 +1,7 @@
+<div class="cats-list" *ngIf="cats">
+    <div class="title">Male</div>
+    <app-list [items]="cats.male" [type]="'Cat'"></app-list>
+
+    <div class="title">Female</div>
+    <app-list [items]="cats.female" [type]="'Cat'"></app-list>
+</div>

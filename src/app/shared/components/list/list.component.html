@@ -1,0 +1,6 @@
+<ul *ngIf="items && items.length">
+  <li *ngFor="let item of items | sortListBy:'name'">
+    {{item.name}}
+  </li>
+</ul>
+<div class="no-item" *ngIf="!items || !items.length">No {{type}}</div>
